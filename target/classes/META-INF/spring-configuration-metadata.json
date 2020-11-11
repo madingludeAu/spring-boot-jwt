@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "dhb.jwt",
+      "type": "com.jwt.utils.JwtUtils",
+      "sourceType": "com.jwt.utils.JwtUtils"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
