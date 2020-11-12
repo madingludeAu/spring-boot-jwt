@@ -15,10 +15,10 @@ public class JwtToken implements AuthenticationToken {
 
 
     public Object getPrincipal() {
-        return null;
+        return token;
     }
 
     public Object getCredentials() {
-        return null;
+        return token;
     }
 }

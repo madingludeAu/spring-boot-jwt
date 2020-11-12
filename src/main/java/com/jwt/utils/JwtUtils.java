@@ -17,11 +17,13 @@ public class JwtUtils {
     // 过期时间5分钟
     private static final long EXPIRE_TIME = 5*60*1000;
 
+
     /**
-     * 校验token是否正确
-     * @param token 密钥
-     * @param secret 用户的密码
-     * @return 是否正确
+     *
+     * @param token
+     * @param username
+     * @param secret
+     * @return
      */
     public static boolean verify(String token, String username, String secret) {
         try {
