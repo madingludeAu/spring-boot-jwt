@@ -6,17 +6,25 @@ spring:
     password: root
     url: jdbc:mysql://127.0.0.1:3306/tdmp?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
-
-
+  servlet:
+    multipart:
+      enabled: true
+#      最大支持文件大小
+      max-file-size: 100MB
+#      最大支持请求大小
+      max-request-size: 100MB
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300 # 配置IP及端口号
+      cluster-name: elasticsearch
+#文件存储路径
+filepath: D:/file/
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.jwt.domain
   configuration:
     map-underscore-to-camel-case: true
-dhb:
-  jwt:
-    # 加密秘钥
-    secret: f4e2e52034348f86b67cde581c0f9eb5
-    # token有效时长，7天，单位秒
-    expire: 604800
-    header: authorizatio
+#日志logging:
+logging:
+  level:
+    root: error

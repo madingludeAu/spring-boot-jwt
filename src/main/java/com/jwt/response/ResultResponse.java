@@ -18,6 +18,9 @@ public class ResultResponse {
         this.data = data;
     }
 
+    public ResultResponse() {
+    }
+
     public int getCode() {
         return code;
     }

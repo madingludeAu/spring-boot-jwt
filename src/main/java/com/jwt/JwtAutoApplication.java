@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-@MapperScan("com.jwt.mapper")
+
 public class JwtAutoApplication {
 
     private static Logger logger = LoggerFactory.getLogger(JwtAutoApplication.class);
